@@ -1,627 +1,691 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.jpg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="放一些代码和生活2">
+  <meta name="author" content="Lalo">
+  <meta name="keywords" content="Lalo">
   
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+  <title>你也就两千分水平</title>
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.10","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 5.4.0"></head>
 
+
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-          <a class="main-nav-link" href="/">Home</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
         
-      </nav>
-      <nav id="sub-nav">
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-我的第一篇博客文章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="article-date">
-  <time class="dt-published" datetime="2021-05-14T07:13:47.000Z" itemprop="datePublished">2021-05-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>我的第一篇文章怎么了 </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" data-id="ckonzkdhv0000x4pxe3s61b0c" data-title="我的第一篇博客文章" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-ElementUI实战教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/" class="article-date">
-  <time class="dt-published" datetime="2021-05-14T07:13:47.000Z" itemprop="datePublished">2021-05-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/">ElementUI实战教程</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="0、安装"><a href="#0、安装" class="headerlink" title="0、安装"></a>0、安装</h2><p>先初始化一个Vue项目</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack element</span><br></pre></td></tr></table></figure>
-
-<p>在vue脚手架项目中进行安装</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 下载elementUI</span></span><br><span class="line"><span class="code">	 npm i element-ui -S</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="1、按钮"><a href="#1、按钮" class="headerlink" title="1、按钮"></a>1、按钮</h1><h2 id="1-1-按钮样式"><a href="#1-1-按钮样式" class="headerlink" title="1.1 按钮样式"></a>1.1 按钮样式</h2><p><img src="F:\工作文档\学习文档\ElementUI实战教程.assets\image-20201211164518224.png" alt="image-20201211164518224"></p>
-<h2 id="1-2-按钮属性"><a href="#1-2-按钮属性" class="headerlink" title="1.2 按钮属性"></a>1.2 按钮属性</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-button</span> <span class="attr">type</span>=<span class="string">&quot;primary&quot;</span> &gt;</span>默认按钮<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="F:\工作文档\学习文档\ElementUI实战教程.assets\image-20201211165835963.png" alt="image-20201211165835963"></p>
-<h2 id="1-3-按钮组"><a href="#1-3-按钮组" class="headerlink" title="1.3 按钮组"></a>1.3 按钮组</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-button-group</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-button</span> <span class="attr">icon</span>=<span class="string">&quot;el-icon-arrow-left&quot;</span> <span class="attr">type</span>=<span class="string">&quot;primary&quot;</span>&gt;</span>上一页<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-button</span> <span class="attr">icon</span>=<span class="string">&quot;el-icon-arrow-right&quot;</span> <span class="attr">type</span>=<span class="string">&quot;primary&quot;</span>&gt;</span>下一页<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-button-group</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="2、Link链接"><a href="#2、Link链接" class="headerlink" title="2、Link链接"></a>2、Link链接</h1><h2 id="2-1-使用"><a href="#2-1-使用" class="headerlink" title="2.1 使用"></a>2.1 使用</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-link</span> <span class="attr">type</span>=<span class="string">&quot;primary&quot;</span> <span class="attr">href</span>=<span class="string">&quot;http://www.baidu.com&quot;</span> <span class="attr">:underline</span>=<span class="string">&quot;false&quot;</span>&gt;</span>链接<span class="tag">&lt;/<span class="name">el-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">el-link</span> <span class="attr">type</span>=<span class="string">&quot;info&quot;</span> <span class="attr">href</span>=<span class="string">&quot;http://www.baidu.com&quot;</span> <span class="attr">disabled</span>&gt;</span>链接<span class="tag">&lt;/<span class="name">el-link</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2-2-属性"><a href="#2-2-属性" class="headerlink" title="2.2 属性"></a>2.2 属性</h2><p><img src="F:\工作文档\学习文档\ElementUI实战教程.assets\image-20201211172524883.png" alt="image-20201211172524883"></p>
-<h1 id="3、Layout（栅格）布局组件"><a href="#3、Layout（栅格）布局组件" class="headerlink" title="3、Layout（栅格）布局组件"></a>3、Layout（栅格）布局组件</h1><p><strong><code>在element ui中分为24栏</code></strong></p>
-<h2 id="3-1-使用Layout组件"><a href="#3-1-使用Layout组件" class="headerlink" title="3.1 使用Layout组件"></a>3.1 使用Layout组件</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-row</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-col</span> <span class="attr">:span</span>=<span class="string">&quot;8&quot;</span>&gt;</span>占用8份<span class="tag">&lt;/<span class="name">el-col</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-col</span> <span class="attr">:span</span>=<span class="string">&quot;8&quot;</span>&gt;</span>占用8份<span class="tag">&lt;/<span class="name">el-col</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-col</span> <span class="attr">:span</span>=<span class="string">&quot;8&quot;</span>&gt;</span>占用8份<span class="tag">&lt;/<span class="name">el-col</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-col</span> <span class="attr">:span</span>=<span class="string">&quot;8&quot;</span>&gt;</span>占用8份<span class="tag">&lt;/<span class="name">el-col</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-row</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="3-2-行属性"><a href="#3-2-行属性" class="headerlink" title="3.2 行属性"></a>3.2 行属性</h2><p>:gutter为行间隔</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-row</span> <span class="attr">:gutter</span>=<span class="string">&quot;20&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">&lt;/el-row&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-3-列属性"><a href="#3-3-列属性" class="headerlink" title="3.3 列属性"></a>3.3 列属性</h2><p>:offset为偏移列</p>
-<p>:push类似于position:relative ，任然占据原来的位置</p>
-<p>:pull与:push一致</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-row</span> <span class="attr">:gutter</span>=<span class="string">&quot;20&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot; :push=&quot;3&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot; :offset=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">&lt;/el-row&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="4、container布局容器"><a href="#4、container布局容器" class="headerlink" title="4、container布局容器"></a>4、container布局容器</h1><h2 id="4-1-创建布局容器"><a href="#4-1-创建布局容器" class="headerlink" title="4.1 创建布局容器"></a>4.1 创建布局容器</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-container</span>&gt;</span></span></span><br><span class="line"><span class="code">	</span></span><br><span class="line"><span class="code">&lt;/el-container&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-2-容器的子元素"><a href="#4-2-容器的子元素" class="headerlink" title="4.2 容器的子元素"></a>4.2 容器的子元素</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-header</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span>标题头<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">el-header</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-aside</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span>我是侧边栏<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">el-aside</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-main</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span>我是中心内容<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">el-main</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-footer</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span>我是页脚<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">el-footer</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<h2 id="4-3-容器属性"><a href="#4-3-容器属性" class="headerlink" title="4.3 容器属性"></a>4.3 容器属性</h2><p>direction=’horizontal/vertical’</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-container</span> <span class="attr">direction</span>=<span class="string">&quot;horizontal&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;el-header&gt;&lt;div&gt;&lt;h1&gt;标题头&lt;/h1&gt;&lt;/div&gt;&lt;/el-header&gt;</span></span><br><span class="line"><span class="code">        &lt;el-container&gt;</span></span><br><span class="line"><span class="code">            &lt;el-aside&gt;&lt;div&gt;&lt;h1&gt;我是侧边栏&lt;/h1&gt;&lt;/div&gt;&lt;/el-aside&gt;</span></span><br><span class="line"><span class="code">            &lt;el-main&gt;&lt;div&gt;&lt;h1&gt;我是中心内容&lt;/h1&gt;&lt;/div&gt;&lt;/el-main&gt;</span></span><br><span class="line"><span class="code">        &lt;/el-container&gt;</span></span><br><span class="line"><span class="code">    &lt;el-footer&gt;&lt;h1&gt;我是页脚&lt;/h1&gt;&lt;/el-footer&gt;</span></span><br><span class="line"><span class="code">&lt;/el-container&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>如果存在el-header或者el-footer 默认为vertical</code></p>
-<h1 id="5、form组件"><a href="#5、form组件" class="headerlink" title="5、form组件"></a>5、form组件</h1><h2 id="5-1-Radio"><a href="#5-1-Radio" class="headerlink" title="5.1 Radio"></a>5.1 Radio</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-radio</span> <span class="attr">label</span>=<span class="string">&quot;男&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;label&quot;</span>&gt;</span></span>男<span class="xml"><span class="tag">&lt;/<span class="name">el-radio</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-radio</span> <span class="attr">label</span>=<span class="string">&quot;女&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;label&quot;</span>&gt;</span></span>女<span class="xml"><span class="tag">&lt;/<span class="name">el-radio</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;radio.vue&quot;</span>,</span><br><span class="line">    <span class="function"><span class="title">data</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span>&#123;</span><br><span class="line">            <span class="attr">label</span>:<span class="string">&quot;男&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<p><code>在使用radio单选按钮至少加入label和v-model两个属性</code></p>
-<h3 id="5-1-1-Radio属性的使用"><a href="#5-1-1-Radio属性的使用" class="headerlink" title="5.1.1 Radio属性的使用"></a>5.1.1 Radio属性的使用</h3><p>name：原生表单name</p>
-<p>size：Radio尺寸</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-radio</span> <span class="attr">label</span>=<span class="string">&quot;女&quot;</span> <span class="attr">name</span>=<span class="string">&quot;女&quot;</span> <span class="attr">:border</span>=<span class="string">&quot;true&quot;</span> <span class="attr">size</span>=<span class="string">&quot;small&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;label&quot;</span>&gt;</span></span>女<span class="xml"><span class="tag">&lt;/<span class="name">el-radio</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="5-1-2-Radio-Events"><a href="#5-1-2-Radio-Events" class="headerlink" title="5.1.2 Radio Events"></a>5.1.2 Radio Events</h3><ul>
-<li>change事件的使用，写在组件标签上</li>
-<li>事件在使用时，必须使用Vue中绑定事件方式进行使用如@事件名=事件处理函数(绑定在Vue对应组件中的函数)</li>
-</ul>
-<h3 id="5-1-3-Radio按钮组"><a href="#5-1-3-Radio按钮组" class="headerlink" title="5.1.3 Radio按钮组"></a>5.1.3 Radio按钮组</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-radio-group</span> <span class="attr">v-model</span>=<span class="string">&quot;radio&quot;</span>  <span class="attr">fill</span>=<span class="string">&quot;green&quot;</span> <span class="attr">text-color</span>=<span class="string">&quot;red&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-radio-button</span> <span class="attr">:border</span>=<span class="string">&quot;true&quot;</span>  <span class="attr">:label</span>=<span class="string">&quot;3&quot;</span>&gt;</span>备选项3<span class="tag">&lt;/<span class="name">el-radio-button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-radio-button</span> <span class="attr">:border</span>=<span class="string">&quot;true&quot;</span>  <span class="attr">:label</span>=<span class="string">&quot;6&quot;</span>&gt;</span>备选项6<span class="tag">&lt;/<span class="name">el-radio-button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-radio-button</span> <span class="attr">:border</span>=<span class="string">&quot;true&quot;</span>  <span class="attr">:label</span>=<span class="string">&quot;9&quot;</span>&gt;</span>备选项9<span class="tag">&lt;/<span class="name">el-radio-button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-radio-group</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>el-radio-button为radio的按钮形式，按钮形式下有以下两个属性</p>
-<p>fill 被激活的按钮的背景颜色</p>
-<p>text-color 被激活的按钮的文字颜色</p>
-<h2 id="5-2-checkbox"><a href="#5-2-checkbox" class="headerlink" title="5.2 checkbox"></a>5.2 checkbox</h2><h3 id="5-2-1-创建"><a href="#5-2-1-创建" class="headerlink" title="5.2.1 创建"></a>5.2.1 创建</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-checkbox</span> <span class="attr">v-model</span>=<span class="string">&quot;checked1&quot;</span>&gt;</span>武汉<span class="tag">&lt;/<span class="name">el-checkbox</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">el-checkbox</span> <span class="attr">v-model</span>=<span class="string">&quot;checked2&quot;</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">el-checkbox</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">el-checkbox</span> <span class="attr">v-model</span>=<span class="string">&quot;checked3&quot;</span>&gt;</span>天津<span class="tag">&lt;/<span class="name">el-checkbox</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="javascript">  <span class="attr">name</span>: <span class="string">&quot;checkbox.vue&quot;</span>,</span></span><br><span class="line"><span class="javascript">  <span class="function"><span class="title">data</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">return</span>&#123;</span></span><br><span class="line"><span class="javascript">          <span class="attr">checked1</span>:<span class="literal">true</span>,</span></span><br><span class="line"><span class="javascript">          <span class="attr">checked2</span>:<span class="literal">true</span>,</span></span><br><span class="line"><span class="javascript">          <span class="attr">checked3</span>:<span class="literal">true</span>,</span></span><br><span class="line"><span class="javascript">      &#125;</span></span><br><span class="line"><span class="javascript">  &#125;</span></span><br><span class="line"><span class="javascript"></span></span><br><span class="line"><span class="javascript">&#125;;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="5-2-2-属性和事件"><a href="#5-2-2-属性和事件" class="headerlink" title="5.2.2 属性和事件"></a>5.2.2 属性和事件</h3><p>参照radio</p>
-<h3 id="5-2-3-复选框组"><a href="#5-2-3-复选框组" class="headerlink" title="5.2.3 复选框组"></a>5.2.3 复选框组</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-checkbox-group</span>  <span class="attr">v-model</span>=<span class="string">&quot;checkedCities&quot;</span> <span class="attr">:min</span>=<span class="string">&quot;1&quot;</span> <span class="attr">:max</span>=<span class="string">&quot;3&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-checkbox</span> <span class="attr">v-for</span>=<span class="string">&quot;city in cities&quot;</span> <span class="attr">:label</span>=<span class="string">&quot;city&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;city&quot;</span>&gt;</span>&#123;&#123;city&#125;&#125;<span class="tag">&lt;/<span class="name">el-checkbox</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-checkbox-group</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>经过测试，复选框组的change事件默认传入选中的checkbox数组,单个复选框的change事件默认传入选中的复选框的布尔值，可以在方法定义处接收到</code></p>
-<h2 id="5-3-input"><a href="#5-3-input" class="headerlink" title="5.3 input"></a>5.3 input</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-input</span> <span class="attr">v-model</span>=<span class="string">&quot;name&quot;</span> <span class="attr">disabled</span>&gt;</span><span class="tag">&lt;/<span class="name">el-input</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/" data-id="ckonzl0ad0001x4px9d9adgl2" data-title="ElementUI实战教程" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mabu/" rel="tag">mabu</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Git操作流程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/14/Git%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/" class="article-date">
-  <time class="dt-published" datetime="2021-05-14T07:13:47.000Z" itemprop="datePublished">2021-05-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/14/Git%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/">Git操作流程</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="一、先前准备"><a href="#一、先前准备" class="headerlink" title="一、先前准备"></a>一、先前准备</h2><h4 id="配置全局变量"><a href="#配置全局变量" class="headerlink" title="配置全局变量"></a><strong>配置全局变量</strong></h4><p><code>git config --global user.name &quot;lalo&quot;</code></p>
-<p><code>git config --global user.email &quot;814112150@qq.com&quot; </code></p>
-<h4 id="生成的文件地址"><a href="#生成的文件地址" class="headerlink" title="生成的文件地址"></a><strong>生成的文件地址</strong></h4><p><code>C:\Users\Lalo\.gitconfig</code></p>
-<h2 id="二、提交操作"><a href="#二、提交操作" class="headerlink" title="二、提交操作"></a>二、提交操作</h2><h4 id="找一个文件夹作为仓库，初始化版本库"><a href="#找一个文件夹作为仓库，初始化版本库" class="headerlink" title="找一个文件夹作为仓库，初始化版本库"></a>找一个文件夹作为仓库，初始化版本库</h4><p><code>git init</code></p>
-<h4 id="将文件添加到临时暂存区"><a href="#将文件添加到临时暂存区" class="headerlink" title="将文件添加到临时暂存区"></a>将文件添加到临时暂存区</h4><p><code>git add .</code></p>
-<h4 id="提交文件"><a href="#提交文件" class="headerlink" title="提交文件"></a>提交文件</h4><p><code>git commit-m &quot;提交提示信息&quot; </code></p>
-<h2 id="三、版本操作"><a href="#三、版本操作" class="headerlink" title="三、版本操作"></a>三、版本操作</h2><h4 id="查看git仓库状态（是否有改动需要上传）"><a href="#查看git仓库状态（是否有改动需要上传）" class="headerlink" title="查看git仓库状态（是否有改动需要上传）"></a>查看git仓库状态（是否有改动需要上传）</h4><p><code>git status</code></p>
-<h4 id="提交日志"><a href="#提交日志" class="headerlink" title="提交日志"></a>提交日志</h4><p><code>git log --pretty=oneline</code></p>
-<h4 id="回退到上一次提交"><a href="#回退到上一次提交" class="headerlink" title="回退到上一次提交"></a>回退到上一次提交</h4><p><code>git reset --hard HEAD^1</code></p>
-<p><code>git reset --soft HEAD^1</code></p>
-<p>HEAD是一个指针，指向最新版本</p>
-<h4 id="版本穿越"><a href="#版本穿越" class="headerlink" title="版本穿越"></a>版本穿越</h4><p><code>         git reflog</code></p>
-<p>穿越到任意版本</p>
-<p><code>git reset --hard id号</code>               </p>
-<h4 id="从暂存区中删除文件"><a href="#从暂存区中删除文件" class="headerlink" title="从暂存区中删除文件"></a>从暂存区中删除文件</h4><p><code>git rm xxx --cached</code></p>
-<h4 id="将文件还原到上个分支前"><a href="#将文件还原到上个分支前" class="headerlink" title="将文件还原到上个分支前"></a>将文件还原到上个分支前</h4><p><code>git checkout *</code></p>
-<h2 id="四、分支操作"><a href="#四、分支操作" class="headerlink" title="四、分支操作"></a>四、分支操作</h2><h4 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h4><p><code>git branch 分支名</code></p>
-<h4 id="查看分支"><a href="#查看分支" class="headerlink" title="查看分支"></a>查看分支</h4><p><code>git branch -v</code></p>
-<h4 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h4><p><code>git checkout 分支名</code></p>
-<h4 id="将当前分支与目标分支合并"><a href="#将当前分支与目标分支合并" class="headerlink" title="将当前分支与目标分支合并"></a>将当前分支与目标分支合并</h4><p><code>git merge 目标分支</code></p>
-<p>合并分支的操作不影响分支的数据</p>
-<h3 id="分支冲突"><a href="#分支冲突" class="headerlink" title="分支冲突"></a>分支冲突</h3><h4 id="查看冲突"><a href="#查看冲突" class="headerlink" title="查看冲突"></a>查看冲突</h4><p><code>git diff</code></p>
-<h4 id="解决：手动"><a href="#解决：手动" class="headerlink" title="解决：手动"></a>解决：手动</h4><p>然后重新add commit</p>
-<h2 id="五、代码托管提交到码云"><a href="#五、代码托管提交到码云" class="headerlink" title="五、代码托管提交到码云 *"></a>五、代码托管提交到码云 *</h2><h3 id="情况一：本地git库进行提交"><a href="#情况一：本地git库进行提交" class="headerlink" title="情况一：本地git库进行提交"></a>情况一：本地git库进行提交</h3><h1 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h1><h4 id="git-clone和git-pull的区别"><a href="#git-clone和git-pull的区别" class="headerlink" title="git clone和git pull的区别"></a>git clone和git pull的区别</h4><p>git clone是用来克隆远程地址的整个git库，本地不需要有git仓库，git pull是将本地库与远程库进行同步，也可以将远程分支与本地仓库进行merge。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/Git%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/" data-id="ckonzl0ag0003x4px5cm0foer" data-title="Git操作流程" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-okr" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/14/okr/" class="article-date">
-  <time class="dt-published" datetime="2021-05-14T07:13:47.000Z" itemprop="datePublished">2021-05-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/14/okr/">okr</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="目标管理"><a href="#目标管理" class="headerlink" title="目标管理"></a>目标管理</h2><h3 id="小组目标"><a href="#小组目标" class="headerlink" title="小组目标"></a>小组目标</h3><h4 id="1、展示所有小组目标"><a href="#1、展示所有小组目标" class="headerlink" title="1、展示所有小组目标"></a>1、展示所有小组目标</h4><p>传参：部门id</p>
-<p>select</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/okr/" data-id="ckonzl0au0005x4px3po6ae4n" data-title="okr" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/haha/" rel="tag">haha</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-supplier" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/14/supplier/" class="article-date">
-  <time class="dt-published" datetime="2021-05-14T07:13:47.000Z" itemprop="datePublished">2021-05-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/14/supplier/">supplier开发文档编写</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="首页："><a href="#首页：" class="headerlink" title="首页："></a>首页：</h2><h3 id="1、查询所有供应商"><a href="#1、查询所有供应商" class="headerlink" title="1、查询所有供应商"></a>1、查询所有供应商</h3><p><strong>入参：</strong>year String 年份</p>
-<p>SELECT supplier,SUM(money) FROM ods_supplier_ys WHERE YEAR = ‘2020’ GROUP BY supplier<br>ORDER BY SUM(money) DESC</p>
-<h3 id="2、根据供应商名字查工厂"><a href="#2、根据供应商名字查工厂" class="headerlink" title="2、根据供应商名字查工厂"></a>2、根据供应商名字查工厂</h3><p><strong>入参：</strong>year String 年份 ，s_name</p>
-<p>SELECT ofy.factory,SUM(ofy.money) FROM supplier_factory sf ,ods_factory_ys ofy WHERE sf.s_name=’福州福森’ AND ofy.factory=sf.f_name<br>AND ofy.year=’2020’ GROUP BY ofy.factory ORDER BY SUM(ofy.money) DESC;</p>
-<h3 id="3、根据工厂名字查货号"><a href="#3、根据工厂名字查货号" class="headerlink" title="3、根据工厂名字查货号"></a>3、根据工厂名字查货号</h3><p>SELECT goods_sku,SUM(money) FROM ods_factory_ys WHERE factory=’寿光佳泰’<br>AND YEAR=’2020’ GROUP BY goods_sku ORDER BY SUM(money) DESC;</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/supplier/" data-id="ckonzl0av0006x4px4v25eais" data-title="supplier开发文档编写" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/haha/" rel="tag">haha</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-mybatisPlus策略" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/14/mybatisPlus%E7%AD%96%E7%95%A5/" class="article-date">
-  <time class="dt-published" datetime="2021-05-14T07:13:47.000Z" itemprop="datePublished">2021-05-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/14/mybatisPlus%E7%AD%96%E7%95%A5/">mybatisPlus策略</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="自动填充"><a href="#自动填充" class="headerlink" title="自动填充"></a>自动填充</h2><h3 id="pojo"><a href="#pojo" class="headerlink" title="pojo"></a>pojo</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@TableField(fill = FieldFill.INSERT)</span></span><br><span class="line"><span class="meta">@ApiModelProperty(value = &quot;创建时间&quot;)</span></span><br><span class="line"><span class="keyword">private</span> Date gmtCreate;</span><br><span class="line"></span><br><span class="line"><span class="meta">@TableField(fill = FieldFill.INSERT_UPDATE)</span></span><br><span class="line"><span class="meta">@ApiModelProperty(value = &quot;更新时间&quot;)</span></span><br><span class="line"><span class="keyword">private</span> Date gmtModified;</span><br></pre></td></tr></table></figure>
-
-<h3 id="元数据处理器"><a href="#元数据处理器" class="headerlink" title="元数据处理器"></a>元数据处理器</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyMetaObjectHandler</span> <span class="keyword">implements</span> <span class="title">MetaObjectHandler</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insertFill</span><span class="params">(MetaObject metaObject)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.setFieldValByName(<span class="string">&quot;createTime&quot;</span>,<span class="keyword">new</span> Date(),metaObject);</span><br><span class="line">        <span class="keyword">this</span>.setFieldValByName(<span class="string">&quot;updateTime&quot;</span>,<span class="keyword">new</span> Date(),metaObject);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">updateFill</span><span class="params">(MetaObject metaObject)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.setFieldValByName(<span class="string">&quot;updateTime&quot;</span>,<span class="keyword">new</span> Date(),metaObject);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="代码生成"><a href="#代码生成" class="headerlink" title="代码生成"></a>代码生成</h2><h3 id="pom"><a href="#pom" class="headerlink" title="pom"></a>pom</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;com.baomidou&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;mybatis-plus-generator&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;<span class="number">3.4</span><span class="number">.1</span>&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.apache.velocity&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;velocity-engine-core&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;<span class="number">2.2</span>&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="java"><a href="#java" class="headerlink" title="java"></a>java</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line">package cn.sobuy.okrv2;</span><br><span class="line"></span><br><span class="line">import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;</span><br><span class="line">import com.baomidou.mybatisplus.core.toolkit.StringPool;</span><br><span class="line">import com.baomidou.mybatisplus.core.toolkit.StringUtils;</span><br><span class="line">import com.baomidou.mybatisplus.generator.AutoGenerator;</span><br><span class="line">import com.baomidou.mybatisplus.generator.InjectionConfig;</span><br><span class="line">import com.baomidou.mybatisplus.generator.config.*;</span><br><span class="line">import com.baomidou.mybatisplus.generator.config.po.TableInfo;</span><br><span class="line">import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;</span><br><span class="line">import com.baomidou.mybatisplus.generator.engine.VelocityTemplateEngine;</span><br><span class="line"></span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.List;</span><br><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @author ppliang</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">public class CodeGenerator &#123;</span><br><span class="line"></span><br><span class="line">   /**</span><br><span class="line">    * &lt;p&gt;</span><br><span class="line">    * 读取控制台内容</span><br><span class="line">    * &lt;/p&gt;</span><br><span class="line">    */</span><br><span class="line">   public static String scanner(String tip) &#123;</span><br><span class="line">      Scanner scanner = new Scanner(System.in);</span><br><span class="line">      StringBuilder help = new StringBuilder();</span><br><span class="line">      help.append(&quot;请输入&quot; + tip + &quot;：&quot;);</span><br><span class="line">      System.out.println(help.toString());</span><br><span class="line">      if (scanner.hasNext()) &#123;</span><br><span class="line">         String ipt = scanner.next();</span><br><span class="line">         if (StringUtils.isNotBlank(ipt)) &#123;</span><br><span class="line">            return ipt;</span><br><span class="line">         &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      throw new MybatisPlusException(&quot;请输入正确的&quot; + tip + &quot;！&quot;);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   public static void main(String[] args) &#123;</span><br><span class="line">      // 代码生成器</span><br><span class="line">      AutoGenerator mpg = new AutoGenerator();</span><br><span class="line"></span><br><span class="line">      // 全局配置</span><br><span class="line">      GlobalConfig gc = new GlobalConfig();</span><br><span class="line">      String projectPath = System.getProperty(&quot;user.dir&quot;);</span><br><span class="line">      gc.setOutputDir(projectPath + &quot;/src/main/java&quot;);</span><br><span class="line">      //作者</span><br><span class="line">      gc.setAuthor(&quot;Lalo&quot;);</span><br><span class="line">      //打开输出目录</span><br><span class="line">      gc.setOpen(false);</span><br><span class="line">      //xml开启 BaseResultMap</span><br><span class="line">      gc.setBaseResultMap(true);</span><br><span class="line">      //xml 开启BaseColumnList</span><br><span class="line">      gc.setBaseColumnList(true);</span><br><span class="line">      // 实体属性 Swagger2 注解</span><br><span class="line">      gc.setSwagger2(true);</span><br><span class="line">      mpg.setGlobalConfig(gc);</span><br><span class="line"></span><br><span class="line">      // 数据源配置</span><br><span class="line">      DataSourceConfig dsc = new DataSourceConfig();</span><br><span class="line">      dsc.setUrl(&quot;jdbc:mysql://localhost:3306/db_sobuy_okr?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=Asia&quot; +</span><br><span class="line">            &quot;/Shanghai&quot;);</span><br><span class="line">      dsc.setDriverName(&quot;com.mysql.cj.jdbc.Driver&quot;);</span><br><span class="line">      dsc.setUsername(&quot;root&quot;);</span><br><span class="line">      dsc.setPassword(&quot;123456&quot;);</span><br><span class="line">      mpg.setDataSource(dsc);</span><br><span class="line"></span><br><span class="line">      // 包配置</span><br><span class="line">      PackageConfig pc = new PackageConfig();</span><br><span class="line">      pc.setParent(&quot;cn.sobuy.okrv2&quot;)</span><br><span class="line">            .setEntity(&quot;pojo&quot;)</span><br><span class="line">            .setMapper(&quot;mapper&quot;)</span><br><span class="line">            .setService(&quot;service&quot;)</span><br><span class="line">            .setServiceImpl(&quot;service.impl&quot;)</span><br><span class="line">            .setController(&quot;controller&quot;);</span><br><span class="line">      mpg.setPackageInfo(pc);</span><br><span class="line"></span><br><span class="line">      // 自定义配置</span><br><span class="line">      InjectionConfig cfg = new InjectionConfig() &#123;</span><br><span class="line">         @Override</span><br><span class="line">         public void initMap() &#123;</span><br><span class="line">            // to do nothing</span><br><span class="line">         &#125;</span><br><span class="line">      &#125;;</span><br><span class="line"></span><br><span class="line">      // 如果模板引擎是 freemarker</span><br><span class="line">//    String templatePath = &quot;/templates/mapper.xml.ftl&quot;;</span><br><span class="line">      // 如果模板引擎是 velocity</span><br><span class="line">       String templatePath = &quot;/templates/mapper.xml.vm&quot;;</span><br><span class="line"></span><br><span class="line">      // 自定义输出配置</span><br><span class="line">      List&lt;FileOutConfig&gt; focList = new ArrayList&lt;&gt;();</span><br><span class="line">      // 自定义配置会被优先输出</span><br><span class="line">      focList.add(new FileOutConfig(templatePath) &#123;</span><br><span class="line">         @Override</span><br><span class="line">         public String outputFile(TableInfo tableInfo) &#123;</span><br><span class="line">            // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！</span><br><span class="line">            return projectPath + &quot;/src/main/resources/mapper/&quot; + tableInfo.getEntityName() + &quot;Mapper&quot;</span><br><span class="line">                  + StringPool.DOT_XML;</span><br><span class="line">         &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">      cfg.setFileOutConfigList(focList);</span><br><span class="line">      mpg.setCfg(cfg);</span><br><span class="line"></span><br><span class="line">      // 配置模板</span><br><span class="line">      TemplateConfig templateConfig = new TemplateConfig();</span><br><span class="line"></span><br><span class="line">      templateConfig.setXml(null);</span><br><span class="line">      mpg.setTemplate(templateConfig);</span><br><span class="line"></span><br><span class="line">      // 策略配置</span><br><span class="line">      StrategyConfig strategy = new StrategyConfig();</span><br><span class="line">      //数据库表映射到实体的命名策略</span><br><span class="line">      strategy.setNaming(NamingStrategy.underline_to_camel);</span><br><span class="line">      //数据库表字段映射到实体的命名策略</span><br><span class="line">      strategy.setColumnNaming(NamingStrategy.no_change);</span><br><span class="line">      //lombok模型</span><br><span class="line">      strategy.setEntityLombokModel(true);</span><br><span class="line">      //生成 @RestController 控制器</span><br><span class="line">      strategy.setRestControllerStyle(true);</span><br><span class="line">      strategy.setInclude(scanner(&quot;表名，多个英文逗号分割&quot;).split(&quot;,&quot;));</span><br><span class="line">      strategy.setControllerMappingHyphenStyle(true);</span><br><span class="line">      //表前缀</span><br><span class="line">      strategy.setTablePrefix(&quot;tb_&quot;);</span><br><span class="line">      mpg.setStrategy(strategy);</span><br><span class="line">      mpg.setTemplateEngine(new VelocityTemplateEngine());</span><br><span class="line">      mpg.execute();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/mybatisPlus%E7%AD%96%E7%95%A5/" data-id="ckonzl0d40007x4px0l3e08yx" data-title="mybatisPlus策略" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mybatisplus/" rel="tag">mybatisplus</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/14/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2021-05-14T06:51:15.605Z" itemprop="datePublished">2021-05-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/14/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/14/hello-world/" data-id="ckonysxfd00003cpx8wckfxw9" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-框架技术" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/04/14/%E6%A1%86%E6%9E%B6%E6%8A%80%E6%9C%AF/" class="article-date">
-  <time class="dt-published" datetime="2021-04-14T07:13:47.000Z" itemprop="datePublished">2021-04-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/04/14/%E6%A1%86%E6%9E%B6%E6%8A%80%E6%9C%AF/">框架技术</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>前端：<a target="_blank" rel="noopener" href="http://panjiachen.github.io/vue-element-admin">vue-element-admin</a>框架模板</p>
-<p>后端：jwt单点登录验证+shiro权限控制</p>
-<p>nacos+openfeign进行微服务请求通信</p>
-<p>熔断器Hystrix：一旦微服务不可用，就切断服务</p>
-<p>网关：springcloud gateway网关转发</p>
-<p>（1）统一跨域解决</p>
-<p>（2）全局权限控制</p>
-<p>（3）全局异常处理</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/04/14/%E6%A1%86%E6%9E%B6%E6%8A%80%E6%9C%AF/" data-id="ckonzl0af0002x4px4pq50wg2" data-title="框架技术" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag">框架</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/haha/" rel="tag">haha</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mabu/" rel="tag">mabu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mybatisplus/" rel="tag">mybatisplus</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/" rel="tag">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag">框架</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/haha/" style="font-size: 20px;">haha</a> <a href="/tags/mabu/" style="font-size: 10px;">mabu</a> <a href="/tags/mybatisplus/" style="font-size: 10px;">mybatisplus</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 10px;">框架</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2021/05/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
           </li>
         
-          <li>
-            <a href="/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/">ElementUI实战教程</a>
-          </li>
         
-          <li>
-            <a href="/2021/05/14/Git%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/">Git操作流程</a>
-          </li>
-        
-          <li>
-            <a href="/2021/05/14/okr/">okr</a>
-          </li>
-        
-          <li>
-            <a href="/2021/05/14/supplier/">supplier开发文档编写</a>
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
       </ul>
     </div>
   </div>
+</nav>
 
-  
-</aside>
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="喜欢这种情感是大脑的假设">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/" target="_self">
+          ElementUI实战教程
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/" target="_self">
+          
+          
+            
+          
+          0、安装先初始化一个Vue项目
+1vue init webpack element
+
+在vue脚手架项目中进行安装
+12# 下载elementUI	 npm i element-ui -S
+
+1、按钮1.1 按钮样式
+1.2 按钮属性1&lt;el-button type=&quot;primary&quot; &gt;默认按钮&lt;/el-button&gt;
+
+
+1.3 按钮组1234&lt
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-05-14 15:13" pubdate>
+              2021-05-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/mabu/">mabu</a>
+            
+          </div>
         
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2021 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
+    </article>
   </div>
-</footer>
 
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/05/14/Git%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/" target="_self">
+          Git操作流程
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/05/14/Git%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/" target="_self">
+          
+          
+            
+          
+          一、先前准备配置全局变量git config --global user.name &quot;lalo&quot;
+git config --global user.email &quot;814112150@qq.com&quot; 
+生成的文件地址C:\Users\Lalo\.gitconfig
+二、提交操作找一个文件夹作为仓库，初始化版本库git init
+将文件添加到临时暂存区git a
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-05-14 15:13" pubdate>
+              2021-05-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/git/">git</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/05/14/okr/" target="_self">
+          okr
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/05/14/okr/" target="_self">
+          
+          
+            
+          
+          目标管理小组目标1、展示所有小组目标传参：部门id
+select
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-05-14 15:13" pubdate>
+              2021-05-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/haha/">haha</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/05/14/mybatisPlus%E7%AD%96%E7%95%A5/" target="_self">
+          mybatisPlus策略
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/05/14/mybatisPlus%E7%AD%96%E7%95%A5/" target="_self">
+          
+          
+            
+          
+          自动填充pojo1234567@TableField(fill = FieldFill.INSERT)@ApiModelProperty(value = &quot;创建时间&quot;)private Date gmtCreate;@TableField(fill = FieldFill.INSERT_UPDATE)@ApiModelProperty(value = &quot;更新时间&quo
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-05-14 15:13" pubdate>
+              2021-05-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/mybatisplus/">mybatisplus</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/05/14/supplier/" target="_self">
+          supplier开发文档编写
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/05/14/supplier/" target="_self">
+          
+          
+            
+          
+          首页：1、查询所有供应商入参：year String 年份
+SELECT supplier,SUM(money) FROM ods_supplier_ys WHERE YEAR = ‘2020’ GROUP BY supplierORDER BY SUM(money) DESC
+2、根据供应商名字查工厂入参：year String 年份 ，s_name
+SELECT ofy.factory,SUM
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-05-14 15:13" pubdate>
+              2021-05-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/haha/">haha</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/05/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" target="_self">
+          我的第一篇博客文章
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/05/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" target="_self">
+          
+          
+            
+          
+          我的第一篇文章怎么了 
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-05-14 15:13" pubdate>
+              2021-05-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/test/">test</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/05/14/hello-world/" target="_self">
+          Hello World
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/05/14/hello-world/" target="_self">
+          
+          
+            
+          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-05-14 14:51" pubdate>
+              2021-05-14
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/04/14/%E6%A1%86%E6%9E%B6%E6%8A%80%E6%9C%AF/" target="_self">
+          框架技术
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/04/14/%E6%A1%86%E6%9E%B6%E6%8A%80%E6%9C%AF/" target="_self">
+          
+          
+            
+          
+          前端：vue-element-admin框架模板
+后端：jwt单点登录验证+shiro权限控制
+nacos+openfeign进行微服务请求通信
+熔断器Hystrix：一旦微服务不可用，就切断服务
+网关：springcloud gateway网关转发
+（1）统一跨域解决
+（2）全局权限控制
+（3）全局异常处理
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-04-14 15:13" pubdate>
+              2021-04-14
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%A1%86%E6%9E%B6/">框架</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
 
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
 
-<script src="/js/jquery-3.4.1.min.js"></script>
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
 
 
 
 
 
-  </div>
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
 </body>
 </html>
