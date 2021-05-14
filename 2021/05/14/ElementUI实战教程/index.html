@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>ElementUI实战教程 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="0、安装先初始化一个Vue项目 1vue init webpack element  在vue脚手架项目中进行安装 12# 下载elementUI	 npm i element-ui -S  1、按钮1.1 按钮样式 1.2 按钮属性1&lt;el-button type&#x3D;&quot;primary&quot; &gt;默认按钮&lt;&#x2F;el-button&gt;   1.3 按钮组1234&amp;lt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ElementUI实战教程">
+<meta property="og:url" content="http://example.com/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="0、安装先初始化一个Vue项目 1vue init webpack element  在vue脚手架项目中进行安装 12# 下载elementUI	 npm i element-ui -S  1、按钮1.1 按钮样式 1.2 按钮属性1&lt;el-button type&#x3D;&quot;primary&quot; &gt;默认按钮&lt;&#x2F;el-button&gt;   1.3 按钮组1234&amp;lt">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="f:/工作文档/学习文档/ElementUI实战教程.assets/image-20201211164518224.png">
+<meta property="og:image" content="f:/工作文档/学习文档/ElementUI实战教程.assets/image-20201211165835963.png">
+<meta property="og:image" content="f:/工作文档/学习文档/ElementUI实战教程.assets/image-20201211172524883.png">
+<meta property="article:published_time" content="2021-05-14T07:13:47.000Z">
+<meta property="article:modified_time" content="2021-05-14T07:39:44.760Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="mabu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="f:/工作文档/学习文档/ElementUI实战教程.assets/image-20201211164518224.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-ElementUI实战教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2021-05-14T07:13:47.000Z" itemprop="datePublished">2021-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      ElementUI实战教程
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="0、安装"><a href="#0、安装" class="headerlink" title="0、安装"></a>0、安装</h2><p>先初始化一个Vue项目</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack element</span><br></pre></td></tr></table></figure>
+
+<p>在vue脚手架项目中进行安装</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 下载elementUI</span></span><br><span class="line"><span class="code">	 npm i element-ui -S</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="1、按钮"><a href="#1、按钮" class="headerlink" title="1、按钮"></a>1、按钮</h1><h2 id="1-1-按钮样式"><a href="#1-1-按钮样式" class="headerlink" title="1.1 按钮样式"></a>1.1 按钮样式</h2><p><img src="F:\工作文档\学习文档\ElementUI实战教程.assets\image-20201211164518224.png" alt="image-20201211164518224"></p>
+<h2 id="1-2-按钮属性"><a href="#1-2-按钮属性" class="headerlink" title="1.2 按钮属性"></a>1.2 按钮属性</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-button</span> <span class="attr">type</span>=<span class="string">&quot;primary&quot;</span> &gt;</span>默认按钮<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="F:\工作文档\学习文档\ElementUI实战教程.assets\image-20201211165835963.png" alt="image-20201211165835963"></p>
+<h2 id="1-3-按钮组"><a href="#1-3-按钮组" class="headerlink" title="1.3 按钮组"></a>1.3 按钮组</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-button-group</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-button</span> <span class="attr">icon</span>=<span class="string">&quot;el-icon-arrow-left&quot;</span> <span class="attr">type</span>=<span class="string">&quot;primary&quot;</span>&gt;</span>上一页<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-button</span> <span class="attr">icon</span>=<span class="string">&quot;el-icon-arrow-right&quot;</span> <span class="attr">type</span>=<span class="string">&quot;primary&quot;</span>&gt;</span>下一页<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-button-group</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="2、Link链接"><a href="#2、Link链接" class="headerlink" title="2、Link链接"></a>2、Link链接</h1><h2 id="2-1-使用"><a href="#2-1-使用" class="headerlink" title="2.1 使用"></a>2.1 使用</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-link</span> <span class="attr">type</span>=<span class="string">&quot;primary&quot;</span> <span class="attr">href</span>=<span class="string">&quot;http://www.baidu.com&quot;</span> <span class="attr">:underline</span>=<span class="string">&quot;false&quot;</span>&gt;</span>链接<span class="tag">&lt;/<span class="name">el-link</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">el-link</span> <span class="attr">type</span>=<span class="string">&quot;info&quot;</span> <span class="attr">href</span>=<span class="string">&quot;http://www.baidu.com&quot;</span> <span class="attr">disabled</span>&gt;</span>链接<span class="tag">&lt;/<span class="name">el-link</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-2-属性"><a href="#2-2-属性" class="headerlink" title="2.2 属性"></a>2.2 属性</h2><p><img src="F:\工作文档\学习文档\ElementUI实战教程.assets\image-20201211172524883.png" alt="image-20201211172524883"></p>
+<h1 id="3、Layout（栅格）布局组件"><a href="#3、Layout（栅格）布局组件" class="headerlink" title="3、Layout（栅格）布局组件"></a>3、Layout（栅格）布局组件</h1><p><strong><code>在element ui中分为24栏</code></strong></p>
+<h2 id="3-1-使用Layout组件"><a href="#3-1-使用Layout组件" class="headerlink" title="3.1 使用Layout组件"></a>3.1 使用Layout组件</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-row</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-col</span> <span class="attr">:span</span>=<span class="string">&quot;8&quot;</span>&gt;</span>占用8份<span class="tag">&lt;/<span class="name">el-col</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-col</span> <span class="attr">:span</span>=<span class="string">&quot;8&quot;</span>&gt;</span>占用8份<span class="tag">&lt;/<span class="name">el-col</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-col</span> <span class="attr">:span</span>=<span class="string">&quot;8&quot;</span>&gt;</span>占用8份<span class="tag">&lt;/<span class="name">el-col</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">el-col</span> <span class="attr">:span</span>=<span class="string">&quot;8&quot;</span>&gt;</span>占用8份<span class="tag">&lt;/<span class="name">el-col</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-row</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-2-行属性"><a href="#3-2-行属性" class="headerlink" title="3.2 行属性"></a>3.2 行属性</h2><p>:gutter为行间隔</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-row</span> <span class="attr">:gutter</span>=<span class="string">&quot;20&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">&lt;/el-row&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-3-列属性"><a href="#3-3-列属性" class="headerlink" title="3.3 列属性"></a>3.3 列属性</h2><p>:offset为偏移列</p>
+<p>:push类似于position:relative ，任然占据原来的位置</p>
+<p>:pull与:push一致</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-row</span> <span class="attr">:gutter</span>=<span class="string">&quot;20&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot; :push=&quot;3&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot; :offset=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">    &lt;el-col :span=&quot;6&quot;&gt;&lt;div class=&quot;grid-content bg-purple&quot;&gt;a&lt;/div&gt;&lt;/el-col&gt;</span></span><br><span class="line"><span class="code">&lt;/el-row&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="4、container布局容器"><a href="#4、container布局容器" class="headerlink" title="4、container布局容器"></a>4、container布局容器</h1><h2 id="4-1-创建布局容器"><a href="#4-1-创建布局容器" class="headerlink" title="4.1 创建布局容器"></a>4.1 创建布局容器</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-container</span>&gt;</span></span></span><br><span class="line"><span class="code">	</span></span><br><span class="line"><span class="code">&lt;/el-container&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-2-容器的子元素"><a href="#4-2-容器的子元素" class="headerlink" title="4.2 容器的子元素"></a>4.2 容器的子元素</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-header</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span>标题头<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">el-header</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-aside</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span>我是侧边栏<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">el-aside</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-main</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span>我是中心内容<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">el-main</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-footer</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span>我是页脚<span class="xml"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><span class="xml"><span class="tag">&lt;/<span class="name">el-footer</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-3-容器属性"><a href="#4-3-容器属性" class="headerlink" title="4.3 容器属性"></a>4.3 容器属性</h2><p>direction=’horizontal/vertical’</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-container</span> <span class="attr">direction</span>=<span class="string">&quot;horizontal&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;el-header&gt;&lt;div&gt;&lt;h1&gt;标题头&lt;/h1&gt;&lt;/div&gt;&lt;/el-header&gt;</span></span><br><span class="line"><span class="code">        &lt;el-container&gt;</span></span><br><span class="line"><span class="code">            &lt;el-aside&gt;&lt;div&gt;&lt;h1&gt;我是侧边栏&lt;/h1&gt;&lt;/div&gt;&lt;/el-aside&gt;</span></span><br><span class="line"><span class="code">            &lt;el-main&gt;&lt;div&gt;&lt;h1&gt;我是中心内容&lt;/h1&gt;&lt;/div&gt;&lt;/el-main&gt;</span></span><br><span class="line"><span class="code">        &lt;/el-container&gt;</span></span><br><span class="line"><span class="code">    &lt;el-footer&gt;&lt;h1&gt;我是页脚&lt;/h1&gt;&lt;/el-footer&gt;</span></span><br><span class="line"><span class="code">&lt;/el-container&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>如果存在el-header或者el-footer 默认为vertical</code></p>
+<h1 id="5、form组件"><a href="#5、form组件" class="headerlink" title="5、form组件"></a>5、form组件</h1><h2 id="5-1-Radio"><a href="#5-1-Radio" class="headerlink" title="5.1 Radio"></a>5.1 Radio</h2><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-radio</span> <span class="attr">label</span>=<span class="string">&quot;男&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;label&quot;</span>&gt;</span></span>男<span class="xml"><span class="tag">&lt;/<span class="name">el-radio</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-radio</span> <span class="attr">label</span>=<span class="string">&quot;女&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;label&quot;</span>&gt;</span></span>女<span class="xml"><span class="tag">&lt;/<span class="name">el-radio</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">name</span>: <span class="string">&quot;radio.vue&quot;</span>,</span><br><span class="line">    <span class="function"><span class="title">data</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span>&#123;</span><br><span class="line">            <span class="attr">label</span>:<span class="string">&quot;男&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><code>在使用radio单选按钮至少加入label和v-model两个属性</code></p>
+<h3 id="5-1-1-Radio属性的使用"><a href="#5-1-1-Radio属性的使用" class="headerlink" title="5.1.1 Radio属性的使用"></a>5.1.1 Radio属性的使用</h3><p>name：原生表单name</p>
+<p>size：Radio尺寸</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">el-radio</span> <span class="attr">label</span>=<span class="string">&quot;女&quot;</span> <span class="attr">name</span>=<span class="string">&quot;女&quot;</span> <span class="attr">:border</span>=<span class="string">&quot;true&quot;</span> <span class="attr">size</span>=<span class="string">&quot;small&quot;</span> <span class="attr">v-model</span>=<span class="string">&quot;label&quot;</span>&gt;</span></span>女<span class="xml"><span class="tag">&lt;/<span class="name">el-radio</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="5-1-2-Radio-Events"><a href="#5-1-2-Radio-Events" class="headerlink" title="5.1.2 Radio Events"></a>5.1.2 Radio Events</h3><ul>
+<li>change事件的使用，写在组件标签上</li>
+<li>事件在使用时，必须使用Vue中绑定事件方式进行使用如@事件名=事件处理函数(绑定在Vue对应组件中的函数)</li>
+</ul>
+<h3 id="5-1-3-Radio按钮组"><a href="#5-1-3-Radio按钮组" class="headerlink" title="5.1.3 Radio按钮组"></a>5.1.3 Radio按钮组</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-radio-group</span> <span class="attr">v-model</span>=<span class="string">&quot;radio&quot;</span>  <span class="attr">fill</span>=<span class="string">&quot;green&quot;</span> <span class="attr">text-color</span>=<span class="string">&quot;red&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-radio-button</span> <span class="attr">:border</span>=<span class="string">&quot;true&quot;</span>  <span class="attr">:label</span>=<span class="string">&quot;3&quot;</span>&gt;</span>备选项3<span class="tag">&lt;/<span class="name">el-radio-button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-radio-button</span> <span class="attr">:border</span>=<span class="string">&quot;true&quot;</span>  <span class="attr">:label</span>=<span class="string">&quot;6&quot;</span>&gt;</span>备选项6<span class="tag">&lt;/<span class="name">el-radio-button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-radio-button</span> <span class="attr">:border</span>=<span class="string">&quot;true&quot;</span>  <span class="attr">:label</span>=<span class="string">&quot;9&quot;</span>&gt;</span>备选项9<span class="tag">&lt;/<span class="name">el-radio-button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-radio-group</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>el-radio-button为radio的按钮形式，按钮形式下有以下两个属性</p>
+<p>fill 被激活的按钮的背景颜色</p>
+<p>text-color 被激活的按钮的文字颜色</p>
+<h2 id="5-2-checkbox"><a href="#5-2-checkbox" class="headerlink" title="5.2 checkbox"></a>5.2 checkbox</h2><h3 id="5-2-1-创建"><a href="#5-2-1-创建" class="headerlink" title="5.2.1 创建"></a>5.2.1 创建</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-checkbox</span> <span class="attr">v-model</span>=<span class="string">&quot;checked1&quot;</span>&gt;</span>武汉<span class="tag">&lt;/<span class="name">el-checkbox</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">el-checkbox</span> <span class="attr">v-model</span>=<span class="string">&quot;checked2&quot;</span>&gt;</span>北京<span class="tag">&lt;/<span class="name">el-checkbox</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">el-checkbox</span> <span class="attr">v-model</span>=<span class="string">&quot;checked3&quot;</span>&gt;</span>天津<span class="tag">&lt;/<span class="name">el-checkbox</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span></span><br><span class="line"><span class="javascript">  <span class="attr">name</span>: <span class="string">&quot;checkbox.vue&quot;</span>,</span></span><br><span class="line"><span class="javascript">  <span class="function"><span class="title">data</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">return</span>&#123;</span></span><br><span class="line"><span class="javascript">          <span class="attr">checked1</span>:<span class="literal">true</span>,</span></span><br><span class="line"><span class="javascript">          <span class="attr">checked2</span>:<span class="literal">true</span>,</span></span><br><span class="line"><span class="javascript">          <span class="attr">checked3</span>:<span class="literal">true</span>,</span></span><br><span class="line"><span class="javascript">      &#125;</span></span><br><span class="line"><span class="javascript">  &#125;</span></span><br><span class="line"><span class="javascript"></span></span><br><span class="line"><span class="javascript">&#125;;</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-2-2-属性和事件"><a href="#5-2-2-属性和事件" class="headerlink" title="5.2.2 属性和事件"></a>5.2.2 属性和事件</h3><p>参照radio</p>
+<h3 id="5-2-3-复选框组"><a href="#5-2-3-复选框组" class="headerlink" title="5.2.3 复选框组"></a>5.2.3 复选框组</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-checkbox-group</span>  <span class="attr">v-model</span>=<span class="string">&quot;checkedCities&quot;</span> <span class="attr">:min</span>=<span class="string">&quot;1&quot;</span> <span class="attr">:max</span>=<span class="string">&quot;3&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-checkbox</span> <span class="attr">v-for</span>=<span class="string">&quot;city in cities&quot;</span> <span class="attr">:label</span>=<span class="string">&quot;city&quot;</span> <span class="attr">:key</span>=<span class="string">&quot;city&quot;</span>&gt;</span>&#123;&#123;city&#125;&#125;<span class="tag">&lt;/<span class="name">el-checkbox</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-checkbox-group</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><code>经过测试，复选框组的change事件默认传入选中的checkbox数组,单个复选框的change事件默认传入选中的复选框的布尔值，可以在方法定义处接收到</code></p>
+<h2 id="5-3-input"><a href="#5-3-input" class="headerlink" title="5.3 input"></a>5.3 input</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-input</span> <span class="attr">v-model</span>=<span class="string">&quot;name&quot;</span> <span class="attr">disabled</span>&gt;</span><span class="tag">&lt;/<span class="name">el-input</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/" data-id="ckonzl0ad0001x4px9d9adgl2" data-title="ElementUI实战教程" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/mabu/" rel="tag">mabu</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/05/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          我的第一篇博客文章
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/05/14/Git%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Git操作流程</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/haha/" rel="tag">haha</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mabu/" rel="tag">mabu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mybatisplus/" rel="tag">mybatisplus</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/" rel="tag">test</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag">框架</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/haha/" style="font-size: 20px;">haha</a> <a href="/tags/mabu/" style="font-size: 10px;">mabu</a> <a href="/tags/mybatisplus/" style="font-size: 10px;">mybatisplus</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 10px;">框架</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/05/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/14/ElementUI%E5%AE%9E%E6%88%98%E6%95%99%E7%A8%8B/">ElementUI实战教程</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/14/Git%E6%93%8D%E4%BD%9C%E6%B5%81%E7%A8%8B/">Git操作流程</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/14/okr/">okr</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/14/supplier/">supplier开发文档编写</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
